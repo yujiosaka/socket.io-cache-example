@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style type="text/css">
+  .hide{
+    display:none;
+  }
+  .show{
+    display:block;
+  }
+  .box {
+    height: 1000px;
+    margin: 10px;
+    padding: 10px;
+    border: thin dashed;
+    font-size: 3em;
+  }
+  </style>
+  <title>Example</title>
+</head>
+<body>
+  <div id="main" class="hide">
+    <div class="box">
+      <a href="http://socket.io">http://socket.io</a>
+    </div>
+    <div class="box">
+      <a href="https://github.com/Automattic/socket.io">https://github.com/Automattic/socket.io</a>
+    </div>
+  </div>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- change localhost to your hostname -->
+  <script src="//localhost.17:4000/socket.io/socket.io.js"></script>
+  <script>
+  // hide main content initially and then show when document ready
+  // for browser to forget current scroll position
+  $(function() {
+    var elem = $('#main');
+    elem.removeClass('hide');
+    elem.addClass('show');
+  });
+  // change localhost to your hostname
+  var socket = io.connect('http://localhost.17:4000');
+  // jQuery('a').click(function() {
+  //   var href = $(this).attr('href');
+  //   // check if href is not either hashchange or javascript
+  //   if (href && href.indexOf('#' !== 0) && href.indexOf('javascript:' !== 0)) {
+  //     // disconnect before unload for browser to retain page cache
+  //     socket.disconnect();
+  //   }
+  // });
+  </script>
+</body>
+</html>

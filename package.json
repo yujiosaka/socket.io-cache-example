@@ -1,0 +1,11 @@
+{
+  "name": "socket.io-cache-sample",
+  "version": "0.0.1",
+  "description": "A sample app to illustrate page cache is cleared by socket.io",
+  "main": "app.js",
+  "dependencies": {
+    "node-static": "^0.7.3",
+    "socket.io": "^1.0.6"
+  },
+  "author": "yujiosaka"
+}

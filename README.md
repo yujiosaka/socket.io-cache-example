@@ -1,4 +1,4 @@
 socket.io-cache-example
 =======================
 
-Mobile Safari's cache stops working with socket.io
+A sample app to illustrate page cache is cleared by socket.io
