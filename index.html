@@ -29,7 +29,7 @@
   </div>
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <!-- change localhost to your hostname -->
-  <script src="//localhost.17:4000/socket.io/socket.io.js"></script>
+  <script src="//localhost:4000/socket.io/socket.io.js"></script>
   <script>
   // hide main content initially and then show when document ready
   // for browser to forget current scroll position
@@ -39,7 +39,7 @@
     elem.addClass('show');
   });
   // change localhost to your hostname
-  var socket = io.connect('http://localhost.17:4000');
+  var socket = io.connect('http://localhost:4000');
   // jQuery('a').click(function() {
   //   var href = $(this).attr('href');
   //   // check if href is not either hashchange or javascript
